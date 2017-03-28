@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>游戏联运平台</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- link -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye-fl.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexGrid.css" />
+    <!-- link_end -->
+
+    <!-- script 引包 -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    /* JS动态媒体查询设置根字号 */
+    ;(function(n) {
+        var e = n.document , t = e.documentElement , 
+            i = 750 , d = i / 50 , 
+            o = "orientationchange" in n ? "orientationchange" : "resize", 
+            a = function() {
+            var n = t.clientWidth || 320; n > 750 && (n = 750),
+            t.style.fontSize = n / d + "px"
+        };
+        e.addEventListener && (n.addEventListener(o, a, !1),
+        e.addEventListener("DOMContentLoaded", a, !1))
+    })(window);
+
+    </script>
+</head>
+<body>
+<div id="app">
+
+<header class="header wrap clearfix">
+    <h1>
+        <a href="#">
+        沃畅玩
+        </a>      
+    </h1>
+
+    <input type="search" name="search" id="search" placeholder="天下"/>   
+    
+     <a href="#" class="personal-btn"></a>
+    <a href="#" class="download-btn"><div class="red-point"></div></a>
+   
+</header>
+
+<!-- 头部nav开始 -->
+<nav class="body-nav row">
+    <a class="col col-3" href="index.html">精品</a>
+    <a class="col col-3" href="shouye-ti.html">专题</a>
+    <a class="col col-3" href="shouye-fl.html">分类</a>
+    <a class="col col-3" href="shouye-px.html">排行</a>
+    <div class="body-nav-udline"></div>
+</nav>
+
+<!-- 分类header -->
+<section class='shouye-fl-bd-hd'>
+    <div class="fl-hd-line fl-hd-line1 row">
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/1.png" alt="" />
+            </a>            
+        </div>
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/2.png" alt="" />
+            </a>            
+        </div>
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/3.png" alt="" />
+            </a>            
+        </div>
+    </div>
+
+    <div class="fl-hd-line fl-hd-line2 row">
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/4.png" alt="" />
+            </a>            
+        </div>
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/5.png" alt="" />
+            </a>            
+        </div>
+        <div class="col col-33 ">
+            <a href="#">
+                <img src="images/分类/6.png" alt="" />
+            </a>            
+        </div>
+    </div>
+</section>
+
+<section class="shouye-fl-bd">
+
+<!-- 1 -->
+    <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game2.img alt="" />
+            休闲益智
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">消除</a>
+                <a class="col-33" href="#">捕鱼</a>
+                <a class="col-33" href="#">休闲</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">动漫</a>
+                <a class="col-33" href="#">解密</a>
+                <a class="col-33" href="#">切割</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+
+<!-- 2 -->
+ <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game1.img alt="" />
+            角色扮演
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">动作</a>
+                <a class="col-33" href="#">策略</a>
+                <a class="col-33" href="#">回合制</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">即时战斗</a>
+                <a class="col-33" href="#">魔幻</a>
+                <a class="col-33" href="#">动漫</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+
+<!-- 3 -->
+ <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game3.img alt="" />
+            射击游戏
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">飞行</a>
+                <a class="col-33" href="#">射击</a>
+                <a class="col-33" href="#">第一视角</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">第三视角</a>
+                <a class="col-33" href="#">战争</a>
+                <a class="col-33" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+
+<!-- 4 -->
+     <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game4.img alt="" />
+            经营策略
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">经营</a>
+                <a class="col-33" href="#">养成</a>
+                <a class="col-33" href="#">塔防</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">策略</a>
+                <a class="col-33" href="#">卡牌</a>
+                <a class="col-33" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+<!-- 5 -->
+     <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game5.img alt="" />
+            动作冒险
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">格斗</a>
+                <a class="col-33" href="#">冒险</a>
+                <a class="col-33" href="#">跑酷</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">即时战斗</a>
+                <a class="col-33" href="javascript:;"></a>
+                <a class="col-33" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+<!-- 6 -->
+     <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game6.img alt="" />
+            网络游戏
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">卡牌</a>
+                <a class="col-33" href="#">角色扮演</a>
+                <a class="col-33" href="#">回合制</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">即时战斗</a>
+                <a class="col-33" href="#">武侠</a>
+                <a class="col-33" href="#">战争</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+
+    <!-- 7 -->
+     <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game2.img alt="" />
+            棋牌游戏
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">斗地主</a>
+                <a class="col-33" href="#">棋类</a>
+                <a class="col-33" href="#">麻将</a>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="shouye-fl-bd-line"></div>
+
+<!-- 8 -->
+     <div class="fl-bd-floor row">
+        <div class="col col-25 fl-bd-floor-l">
+            <a href="#">
+                <img v-bind:src=game1.img alt="" />
+            体育竞速
+            </a>
+        </div>
+        <div class="col fl-bd-floor-r">
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">球类</a>
+                <a class="col-33" href="#">竞速</a>
+                <a class="col-33" href="#">跑酷</a>
+            </div>
+            <div class="fl-bd-floor-r-l row">
+                <a class="col-33" href="#">射击</a>
+                <a class="col-33" href="javascript:;"></a>
+                <a class="col-33" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+
+
+
+<div class="chenggao"></div>
+
+<!-- 底部nav -->
+<nav class="bm-nav wrap">
+    <div class="nav-sele-container">
+        <a href="#" class="nav-current">首页</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">会员</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">我的</a>
+    </div>
+
+</nav>
+
+
+
+<script type="text/javascript" src="js/vue.js"></script>
+
+<script type="text/javascript" src="js/index-jp.js"></script>
+
+
+</div>
+</body>
+</html>

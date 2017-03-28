@@ -1,0 +1,34 @@
+/* 
+* @Author: Marte
+* @Date:   2016-12-01 11:16:03
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-01 15:00:53
+*/
+.body-nav>.body-nav-udline{
+    left: 25%;
+}
+.jt-bd-container{
+    background: #FFFFFF;margin-bottom: 1rem;
+}
+.shouye-jt-body>.jt-bd-container>a{
+    display: block; width: 100%;
+}
+.shouye-jt-body>.jt-bd-container>a>img{
+    width: 100%;
+}
+.shouye-jt-body>.jt-bd-container{
+    width: 100%;
+    line-height: 2rem;
+}
+.shouye-jt-body>.jt-bd-container>.jt-bd-fl2{
+    padding-left: 1.2rem; padding-right: 1.6rem;
+    font-size: 0.63rem;color: #333333;
+}
+.shouye-jt-body>.jt-bd-container>.jt-bd-fl2>.jt-bd-look-btn{
+    background-color:#FA8909;
+    color:white; display:block;
+    margin-top: 0.45rem;
+    width: 2.5rem;height: 1rem;line-height: 1rem;
+    border-radius: 0.15rem;
+    text-align: center;
+}

@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:2:1-97:12
+	package
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.2.1] E:\github\JsBriderTest\mowen\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+		INJECTED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml
+application
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:11:5-75:19
+MERGED from [com.android.support:support-v4:23.2.1] E:\github\JsBriderTest\mowen\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:15:9-41
+	android:allowBackup
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:14:9-45
+	android:theme
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:16:9-40
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:12:9-67
+activity#com.magicwindow.deeplink.activity.SplashActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:17:9-32:20
+	android:label
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:19:13-45
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:18:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:20:13-23:29
+action#android.intent.action.MAIN
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:22:27-74
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT+android.intent.category.VIEW
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:24:13-31:29
+data
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:25:17-49
+	android:scheme
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:25:23-46
+action#android.intent.action.VIEW
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.VIEW
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:28:17-73
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:28:27-70
+category#android.intent.category.DEFAULT
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:30:27-75
+activity#com.magicwindow.deeplink.activity.HomeActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:33:9-37:20
+	android:label
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:35:13-45
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:34:13-74
+activity#com.magicwindow.deeplink.activity.NormalStyleActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:38:9-40:75
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:40:13-63
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:39:13-81
+activity#com.magicwindow.deeplink.activity.CustomStyleActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:41:9-43:75
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:43:13-63
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:42:13-81
+activity#com.magicwindow.deeplink.activity.OtherStyleActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:44:9-46:75
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:46:13-63
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:45:13-80
+activity#com.magicwindow.deeplink.activity.CustomEventActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:47:9-49:75
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:49:13-63
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:48:13-81
+activity#com.zxinsight.common.base.MWActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:51:9-58:20
+	android:exported
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:54:13-36
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:53:13-85
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:52:13-64
+intent-filter#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:55:13-57:29
+action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:56:17-92
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:56:25-89
+activity#com.magicwindow.deeplink.wxapi.WXEntryActivity
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:60:9-65:75
+	android:launchMode
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:64:13-43
+	android:exported
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:63:13-36
+	android:configChanges
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:62:13-74
+	android:theme
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:65:13-72
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:61:13-74
+meta-data#MW_APPID
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:68:9-70:64
+	android:value
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:70:13-61
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:69:13-36
+meta-data#MW_CHANNEL
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:72:9-74:43
+	android:value
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:74:13-40
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:73:13-38
+uses-permission#android.permission.INTERNET
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:77:5-67
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:77:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:79:5-79
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:79:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:81:5-75
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:81:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:84:5-81
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:84:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:85:5-84
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:85:22-81
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:86:5-76
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:86:22-73
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:87:5-71
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:87:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:89:5-74
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:89:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:91:5-74
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:91:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:94:5-81
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:94:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:95:5-79
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:95:22-76
+uses-permission#android.permission.CAMERA
+ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:96:5-65
+	android:name
+		ADDED from E:\github\JsBriderTest\mowen\src\main\AndroidManifest.xml:96:22-62

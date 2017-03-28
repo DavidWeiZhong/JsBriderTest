@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.otherapp">
+
+    <!-- 连接互联网Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--判断程序是否在前台运行,必须 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 检测手机基本状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:host="sj.com"
+                    android:pathPrefix="/david"
+                    android:scheme="qiuweizhong"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OtherActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:host="sj.com"
+                    android:pathPrefix="/david"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <!--MW sdk ID 此处跟activity同级，需要放在Application内，MW_APPID（也就是后台的” 魔窗AppKey”）不能更改 -->
+        <meta-data android:name="MW_APPID" android:value="XESD5O75K2EE2TYEGD5QCL0VFYETV1YC" />
+        <!--渠道名称MW_CHANNEL不能更改 -->
+        <meta-data android:name="MW_CHANNEL" android:value="wandoujia" />
+    </application>
+
+</manifest>

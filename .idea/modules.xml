@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JsBriderTest.iml" filepath="$PROJECT_DIR$/JsBriderTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JsBridgeWebView/JsBridgeWebView.iml" filepath="$PROJECT_DIR$/JsBridgeWebView/JsBridgeWebView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/browse/browse.iml" filepath="$PROJECT_DIR$/browse/browse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/callddemo/callddemo.iml" filepath="$PROJECT_DIR$/callddemo/callddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookie_app_web/cookie_app_web.iml" filepath="$PROJECT_DIR$/cookie_app_web/cookie_app_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsbridger/jsbridger.iml" filepath="$PROJECT_DIR$/jsbridger/jsbridger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsbridger2/jsbridger2.iml" filepath="$PROJECT_DIR$/jsbridger2/jsbridger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsh5url_otherapp/jsh5url_otherapp.iml" filepath="$PROJECT_DIR$/jsh5url_otherapp/jsh5url_otherapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mowen/mowen.iml" filepath="$PROJECT_DIR$/mowen/mowen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/otherapp/otherapp.iml" filepath="$PROJECT_DIR$/otherapp/otherapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfb_retrofit_post/zfb_retrofit_post.iml" filepath="$PROJECT_DIR$/zfb_retrofit_post/zfb_retrofit_post.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zfb_wx/zfb_wx.iml" filepath="$PROJECT_DIR$/zfb_wx/zfb_wx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhifubao/zhifubao.iml" filepath="$PROJECT_DIR$/zhifubao/zhifubao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JsBridge_Android/JsBridge_Android.iml" filepath="$PROJECT_DIR$/JsBridge_Android/JsBridge_Android.iml" />
+    </modules>
+  </component>
+</project>

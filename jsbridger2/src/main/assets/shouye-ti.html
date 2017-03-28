@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>游戏联运平台</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- link -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye-jt.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexGrid.css" />
+    <!-- link_end -->
+
+    <!-- script 引包 -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    /* JS动态媒体查询设置根字号 */
+    ;(function(n) {
+        var e = n.document , t = e.documentElement , 
+            i = 750 , d = i / 50 , 
+            o = "orientationchange" in n ? "orientationchange" : "resize", 
+            a = function() {
+            var n = t.clientWidth || 320; n > 750 && (n = 750),
+            t.style.fontSize = n / d + "px"
+        };
+        e.addEventListener && (n.addEventListener(o, a, !1),
+        e.addEventListener("DOMContentLoaded", a, !1))
+    })(window);
+
+    </script>
+</head>
+<body>
+<div id="app">
+
+<header class="header wrap clearfix">
+    <h1>
+        <a href="#">
+        沃畅玩
+        </a>      
+    </h1>
+
+    <input type="search" name="search" id="search" placeholder="天下"/>   
+    
+     <a href="#" class="personal-btn"></a>
+    <a href="#" class="download-btn"><div class="red-point"></div></a>
+   
+</header>
+
+<!-- 头部nav开始 -->
+<nav class="body-nav row">
+    <a class="col col-3" href="index.html">精品</a>
+    <a class="col col-3" href="shouye-ti.html">专题</a>
+    <a class="col col-3" href="shouye-fl.html">分类</a>
+    <a class="col col-3" href="shouye-px.html">排行</a>
+    <div class="body-nav-udline"></div>
+</nav>
+
+<section class="shouye-jt-body">
+    <div class="jt-bd-container">
+        <a href="#">
+            <img v-bind:src=actAd.address1 alt="" />
+        </a>
+        
+        <div class="jt-bd-fl2">
+            开通会员
+            <a href="#" class="jt-bd-look-btn fr">查看</a>
+        </div>
+    </div>
+
+    <div class="jt-bd-container">
+        <a href="#">
+            <img v-bind:src=actAd.address2 alt="" />
+        </a>
+        
+        <div class="jt-bd-fl2">
+            免流量畅玩
+            <a href="#" class="jt-bd-look-btn fr">查看</a>
+        </div>
+    </div>
+    <div class="jt-bd-container">
+        <a href="#">
+            <img v-bind:src=actAd.address3 alt="" />
+        </a>
+        
+        <div class="jt-bd-fl2">
+            节日活动
+            <a href="#" class="jt-bd-look-btn fr">查看</a>
+        </div>
+    </div>
+
+    <div class="jt-bd-container">
+        <a href="#">
+            <img v-bind:src=actAd.address1 alt="" />
+        </a>
+        
+        <div class="jt-bd-fl2">
+            精彩活动
+            <a href="#" class="jt-bd-look-btn fr">查看</a>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="chenggao"></div>
+
+<!-- 底部nav -->
+<nav class="bm-nav wrap">
+    <div class="nav-sele-container">
+        <a href="#" class="nav-current">首页</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">会员</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">我的</a>
+    </div>
+
+</nav>
+
+
+
+<script type="text/javascript" src="js/vue.js"></script>
+
+<script type="text/javascript" src="js/index-jp.js"></script>
+
+
+</div>
+</body>
+</html>

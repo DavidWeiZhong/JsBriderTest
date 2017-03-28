@@ -1,0 +1,67 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+function javacalljs(){
+     document.getElementById("content").innerHTML = "<br>JAVA调用了JS的无参函数";
+}
+function javacalljswith(arg){
+     document.getElementById("content").innerHTML = ("<br>"+arg);
+}
+function checkCookie() {
+     alert(34)
+     username=getCookie('username')
+      if (username!=null && username!=""){
+           alert('Welcome again '+username+'!')
+      }else {
+      alert(3)
+           username=prompt('Please enter your name:',"")
+            if (username!=null && username!=""){
+                setCookie('username',username,365)
+             }
+       }
+}
+
+		//获得cookie
+        function getCookie(c_name){
+            alert('2222weikong')
+            if (document.cookie.length>0){
+             alert('buweikong')
+                c_start=document.cookie.indexOf(c_name + "=")
+                if (c_start!=-1) {
+                    c_start=c_start + c_name.length+1
+                    c_end=document.cookie.indexOf(";",c_start)
+                    if (c_end==-1) c_end=document.cookie.length
+                       return unescape(document.cookie.substring(c_start,c_end))
+                }
+            }
+            return ""
+        }
+
+         //清除上所有cookie
+        function clearCookie(){
+			var keys=document.cookie.match(/[^ =;]+(?=\=)/g);
+			if (keys) {
+				for (var i = keys.length; i--;)
+					document.cookie=keys[i]+'=0;expires=' + new Date( 0).toUTCString()
+				}
+		}
+
+		//设置cookie
+		function setCookie(c_name,value,expiredays){
+            var exdate=new Date()
+            exdate.setDate(exdate.getDate()+expiredays)
+            document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+            alert("用户名 " + value + " 保存成功")
+        }
+</script>
+</head>
+<body>
+HTML 内容显示 <br/>
+<h1><div id="content">内容显示</div></h1><br/>
+<input type="button"  value="点击调用java代码" onclick="window.android.startFunction()" /><br/>
+<input type="button"  value="点击调用java代码并传递参数" onclick="window.android.startFunction('http://blog.csdn.net/Leejizhou')"  /><br/>
+<input type="button"  value="清楚所有cookie" onclick="clearCookie()"  /><br/>
+<input type="button"  value="检查android---保存的cookie" onclick="checkCookie()"  /><br/>
+<input type="button"  value="js端设置cookie" onclick="setCookie('username','qiuqiu',123)"  />
+</body>
+</html>

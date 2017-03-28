@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/JsBridgeWebView" />
+            <option value="$PROJECT_DIR$/browse" />
+            <option value="$PROJECT_DIR$/callddemo" />
+            <option value="$PROJECT_DIR$/cookie_app_web" />
+            <option value="$PROJECT_DIR$/jsbridger" />
+            <option value="$PROJECT_DIR$/jsbridger2" />
+            <option value="$PROJECT_DIR$/jsh5url_otherapp" />
+            <option value="$PROJECT_DIR$/mowen" />
+            <option value="$PROJECT_DIR$/otherapp" />
+            <option value="$PROJECT_DIR$/zfb_retrofit_post" />
+            <option value="$PROJECT_DIR$/zfb_wx" />
+            <option value="$PROJECT_DIR$/zhifubao" />
+            <option value="$PROJECT_DIR$/JsBridge_Android" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/JsBridgeWebView" />
+            <option value="$PROJECT_DIR$/browse" />
+            <option value="$PROJECT_DIR$/callddemo" />
+            <option value="$PROJECT_DIR$/cookie_app_web" />
+            <option value="$PROJECT_DIR$/jsbridger" />
+            <option value="$PROJECT_DIR$/jsbridger2" />
+            <option value="$PROJECT_DIR$/jsh5url_otherapp" />
+            <option value="$PROJECT_DIR$/mowen" />
+            <option value="$PROJECT_DIR$/otherapp" />
+            <option value="$PROJECT_DIR$/zfb_retrofit_post" />
+            <option value="$PROJECT_DIR$/zfb_wx" />
+            <option value="$PROJECT_DIR$/zhifubao" />
+            <option value="$PROJECT_DIR$/JsBridge_Android" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

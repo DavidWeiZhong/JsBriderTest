@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#f6f6f6</color>
+    <color name="bg_gray">#E4E4E4</color>
+    <color name="bg_white">#E4E4E4</color>
+    <color name="black">#000000</color>
+    <color name="bottom_bar">#FFF7F7F7</color>
+    <color name="bottom_bar_text_normal">#A4A4A4</color>
+    <color name="bottom_bar_text_select">@color/black</color>
+    <color name="detail_button">#E15111</color>
+    <color name="gray">#808080</color>
+    <color name="gray_1">#F2F2F2</color>
+    <color name="green">#58a525</color>
+    <color name="home_list_text">#FFEAEAEA</color>
+    <color name="light_white">#fff</color>
+    <color name="notice_bg">#95236D</color>
+    <color name="red">#E84B35</color>
+    <color name="text_gray_light">#ff868686</color>
+    <color name="text_yellow">#ffFE9209</color>
+    <color name="translucent">#88252525</color>
+    <color name="translucent_white">#88FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFBA00</color>
+    <declare-styleable name="CircleFlowIndicator"><attr format="color" name="activeColor"/><attr format="color" name="inactiveColor"/><attr format="dimension" name="m_radius"/><attr format="boolean" name="m_centered"/><attr format="integer" name="fadeOut"/><attr name="inactiveType"><flag name="stroke" value="0"/><flag name="fill" value="1"/></attr><attr name="activeType"><flag name="stroke" value="0"/><flag name="fill" value="1"/></attr><attr format="dimension" name="circleSeparation"/><attr format="dimension" name="activeRadius"/></declare-styleable>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="CircleIndicator"><attr format="dimension" name="ci_width"/><attr format="dimension" name="ci_height"/><attr format="dimension" name="ci_margin"/><attr format="reference" name="ci_animator"/><attr format="reference" name="ci_animator_reverse"/><attr format="reference" name="ci_drawable"/><attr format="reference" name="ci_drawable_unselected"/></declare-styleable>
+    <declare-styleable name="StaggeredGridView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/><attr format="dimension" name="item_margin"/><attr format="dimension" name="grid_paddingLeft"/><attr format="dimension" name="grid_paddingRight"/><attr format="dimension" name="grid_paddingTop"/><attr format="dimension" name="grid_paddingBottom"/></declare-styleable>
+    <declare-styleable name="TitleBar"><attr format="integer" name="showLeft"><enum name="visible" value="0"/><enum name="gone" value="8"/></attr><attr format="integer" name="showRight"><enum name="visible" value="0"/><enum name="gone" value="8"/></attr><attr format="reference|string" name="titleText"/><attr format="reference|string" name="rightText"/></declare-styleable>
+    <declare-styleable name="ViewFlow"><attr format="integer" name="sidebuffer"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="dp9">9dp</dimen>
+    <dimen name="eightyheight">80dp</dimen>
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="title_text_sp20">20sp</dimen>
+    <string name="app_name">MagicWindowSDKExample</string>
+    <string name="buy_done">购买完成</string>
+    <string name="category">分类</string>
+    <string name="click_to_buy">点击购买</string>
+    <string name="come_in_buy_page">进入购买页面</string>
+    <string name="custom_event_page">下面几个按钮分别模拟，进入购买页面，点击购买，以及购买成功。</string>
+    <string name="custom_style_description">获取活动内容后会替换此内容</string>
+    <string name="custom_style_title">获取标题后会替换此内容</string>
+    <string name="detail">详情</string>
+    <string name="dialog_page">进入此页面，如果dialog内定义的魔窗位开启，则会首先弹出dialog</string>
+    <string name="home_title">首页</string>
+    <string name="home_top_1">生活</string>
+    <string name="home_top_2">电影</string>
+    <string name="home_top_3">充值</string>
+    <string name="home_top_4">酒店</string>
+    <string name="home_top_5">调研</string>
+    <string name="ok">确定</string>
+    <string name="share_by_click">点击直接分享</string>
+    <string name="splash_title">引导页</string>
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="listView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:dividerHeight">6dip</item>
+        <item name="android:paddingRight">3dip</item>
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:listSelector">@color/yellow</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/white</item>
+    </style>
+    <style name="main_tab_but_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="radioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">2dip</item>
+    </style>
+    <style name="topbarText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="tv_top_essential_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>        
+    </style>
+</resources>

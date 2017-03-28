@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\github\\JsBriderTest\\mowen\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\img_1.png",
+        "source": "E:\\github\\JsBriderTest\\mowen\\src\\main\\res\\drawable-xxhdpi\\img_1.png"
+    },
+    {
+        "merged": "E:\\github\\JsBriderTest\\mowen\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\img_2.png",
+        "source": "E:\\github\\JsBriderTest\\mowen\\src\\main\\res\\drawable-xxhdpi\\img_2.png"
+    },
+    {
+        "merged": "E:\\github\\JsBriderTest\\mowen\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\img_3.png",
+        "source": "E:\\github\\JsBriderTest\\mowen\\src\\main\\res\\drawable-xxhdpi\\img_3.png"
+    }
+]

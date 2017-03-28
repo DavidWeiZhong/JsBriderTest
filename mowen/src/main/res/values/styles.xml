@@ -1,0 +1,71 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <!--<style name="AppBaseTheme" parent="android:Theme.Light">-->
+        <!--&lt;!&ndash;-->
+            <!--Theme customizations available in newer API levels can go in-->
+            <!--res/values-vXX/styles.xml, while customizations related to-->
+            <!--backward-compatibility can go here.-->
+        <!--&ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="topbarText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="tv_top_essential_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>        
+    </style>
+
+    <style name="radioButtonStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:paddingBottom">2dip</item>
+    </style>
+    
+    <style name="main_tab_but_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="listView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:dividerHeight">6dip</item>
+        <item name="android:paddingRight">3dip</item>
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:clickable">false</item>
+        <item name="android:listSelector">@color/yellow</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"]{ -webkit-appearance:none; resize: none; }
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+header,nav,article,aside,section,footer,details,figcaption,figure,hgroup,menu{display: block; }
+/* 初始化 */ 
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,img,button,form,table,th,tr,td,tbody,details,figcaption,figure,hgroup,menu{margin:0; padding:0;}
+table {border-collapse: collapse; border-spacing: 0; empty-cells: show; font-size: inherit;}
+body{min-width: 320px; font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei; overflow-x:hidden;}
+a{ text-decoration:none; color:#969696;}
+h1, h2, h3, h4, h5, h6{ font-size:100%;}
+em,i{font-style:normal;}
+input,button,textarea,select {font-size: 100%; }
+a,input,textarea {text-decoration: none; outline: 0; }
+fieldset,img {border: 0;}
+li,img,label,input {vertical-align: middle; }
+ul,ol{list-style:none;}
+img { max-width: 100%; height: auto;} /* 图片自适应 */
+/* 常用工具类 */
+.wrap{ margin-left: auto; margin-right: auto; }
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.fl{ float: left; }
+.fr{ float: right;}
+.tac{text-align: center;}
+.oh{overflow: hidden;}
+.por{position: relative;}
+.ti2{text-indent: 2em;}
+.dn{display: none;}
+.db{display: block;}
+/*-------------------------------*/
+.orange{color:#FA8909;}
+.wrap{ width: 12.8rem;margin-left: auto;margin-right: auto; }
+body{ background: #F0F0F0;}
+
+
+/*header部分*/
+.header{
+    width: 100%;
+    height: 1.84rem; background-color: #FFFFFF;
+    position:relative;
+    border-bottom: 2px solid #BDBDBE;
+    line-height: 1.84rem;
+}
+
+.header>h1 a{
+background:url("../images/首页/u89.png") no-repeat;
+padding-left: 1.84rem;
+font-size: 0.8rem; font-weight: normal;
+ background-size: 1.8rem 1.8rem;
+    color:black; float: left;
+}
+
+.header>#search{ 
+width: 6.2rem;height: 1.2rem;
+padding-left:0.3rem;padding-top:0.1rem;padding-right: 1rem;
+border-radius: 0.3rem; border:1px solid #CFCFCF;
+display:block;
+position:absolute;left:50%;top: 50%;
+margin-top: -0.6rem;margin-left: -2.6rem;
+background: url("../images/首页/u98.png") no-repeat;
+background-position: 95% 50%;
+}
+.header>a{
+    float: right;
+    width: 1.83rem;height: 1.83rem;
+    background-color: pink;
+}
+.header>.download-btn{
+    background:url("../images/首页/u93.png") no-repeat;
+    background-position: 50% 50%;
+    position:relative;
+}
+.header>.download-btn .red-point{
+    position:absolute; right: 20%;top: 15%; 
+    width: 10px;height: 10px;
+    border-radius: 5px;
+    background-color: #FF3300;
+}
+.header>.personal-btn{
+    background:url("../images/首页/u93.png") no-repeat;
+    background-position: 50% 50%;
+
+}
+/*header_end*/
+
+
+/*footer*/
+.bm-nav{
+    position:fixed;bottom: 0;left: 0;
+    width: 100%;background-color: #FFFFFF;
+    height: 2rem;
+    border-top: 1px solid #BDBDBE;
+    z-index: 5;
+}
+.bm-nav>.nav-sele-container{
+    float: left;
+    width: 33.33%;height: 2rem;
+}
+.bm-nav>.nav-sele-container>a{
+    display:block;
+    color:#8F8F8F;font-size: 0.55rem;
+    margin-right: auto;margin-left: auto;
+    height: 2rem; width: 1.8rem;
+    padding-top: 1.1rem;
+    text-align: center;
+}
+
+.bm-nav>.nav-sele-container:nth-of-type(1)>a{
+    background: url("../images/首页/u61.png") no-repeat;
+    background-position:50% 6%;
+    background-size: 60%;
+}
+.bm-nav>.nav-sele-container:nth-of-type(2)>a{
+    background: url("../images/首页/u55.png") no-repeat;
+    background-position:50% 6%;
+    background-size: 60%;
+}
+.bm-nav>.nav-sele-container:nth-of-type(3)>a{
+    background: url("../images/首页/u59.png") no-repeat;
+    background-position:50% 6%;
+    background-size: 60%;
+}
+.bm-nav>.nav-sele-container>.nav-current{
+    color:orange;
+}
+/*footer_end*/
+
+
+/*body_nav*/
+.body-nav{
+    height: 1.3rem;background-color: #FFFFFF;
+    position: relative;
+    margin-bottom: 1px;
+}
+.body-nav a{
+    height: 1.3rem;line-height: 1.3rem;
+    display:inline-block;
+    text-align: center;
+    color:black;
+}
+.body-nav .body-nav-udline{
+    width:25%;height: 2px; 
+    background:orange;
+    position:absolute;
+    left: 0;bottom: -1px;
+}
+
+
+
+
+    .chenggao{
+        width: 100%;    height: 2rem;
+    }

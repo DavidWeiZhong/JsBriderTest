@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magicwindow.deeplink"
+    android:versionCode="3"
+    android:versionName="3.7" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+    <!-- 连接互联网Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 用于人人SSO登陆 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 用于人人SSO登陆 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 用于人人SSO登陆 -->
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.magicwindow.deeplink.base.MWApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.magicwindow.deeplink.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mwdemo" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.magicwindow.deeplink.activity.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.magicwindow.deeplink.activity.NormalStyleActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.magicwindow.deeplink.activity.CustomStyleActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.magicwindow.deeplink.activity.OtherStyleActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.magicwindow.deeplink.activity.CustomEventActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <!-- 主activity，必加 -->
+        <activity
+            android:name="com.zxinsight.common.base.MWActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|navigation"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.magicwindow.deeplink.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 请将XEJ7F76J61LHEWRI3Q9A6UN9BM4CRT3X替换成你自己的value -->
+        <meta-data
+            android:name="MW_APPID"
+            android:value="8MNVMXFRZ08IHCSMPSL1B7S1WURMI1NN" />
+        <!-- 渠道 -->
+        <meta-data
+            android:name="MW_CHANNEL"
+            android:value="Google Play" />
+    </application>
+
+</manifest>

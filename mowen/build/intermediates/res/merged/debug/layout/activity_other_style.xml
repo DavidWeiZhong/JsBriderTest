@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@color/bg_white">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/dialog"
+              android:textSize="20sp"
+              android:textColor="@color/black"
+              android:text="@string/dialog_page"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/share_by_click"
+            android:text="@string/share_by_click"
+            android:textSize="20sp"
+            android:textColor="@color/text_yellow"
+            android:layout_below="@+id/dialog"/>
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':jsbridger', ':jsbridger2', ':\u007FJsBridge_Android', ':browse', ':JsBridgeWebView', ':callddemo', ':cookie_app_web', ':jsh5url_otherapp', ':otherapp', ':mowen', ':zfb_wx', ':zhifubao', ':zfb_retrofit_post'

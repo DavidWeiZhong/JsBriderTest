@@ -1,0 +1,29 @@
+/* 
+* @Author: Marte
+* @Date:   2016-12-05 09:46:44
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-05 09:54:17
+*/
+/*顶部*/
+.top{
+    width:100%;
+    height:1.8rem;
+    position: relative;
+    font-size: 0.3rem;
+    line-height: 1.8rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.top .goback a{
+    background: url("#") no-repeat;
+    background-size: 1.5rem 1rem;
+    padding-left:1.6rem;
+    position: absolute;
+    left: 0;
+}
+.top h1{
+    font-size: 0.8rem;
+    text-align: center;
+}
+/*顶部end*/

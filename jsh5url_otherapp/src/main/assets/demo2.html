@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script src="https://static.mlinks.cc/scripts/dist/mlink.min.js"></script>
+    <script type="text/javascript">
+
+
+function openApp() {
+        //alert("999");
+        // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+        // 否则打开a标签的href链接
+        var ifr = document.createElement('iframe');
+        ifr.src = 'httpqiu://sj.com/david?name=qiuweizhong&age=24';
+        ifr.style.display = 'none';
+        document.body.appendChild(ifr);
+        window.setTimeout(function(){
+            document.body.removeChild(ifr);
+        },3000)
+}
+
+function android(){
+        window.location.href = "httpqiu://sj.com/david?name=qiuweizhong&age=24"; /***打开app的协议，有安卓同事提供***/
+        window.setTimeout(function(){
+           window.location.href = "http://www.wjtr.com/download/index.html"; /***打开app的协议，有安卓同事提供***/
+        },2000);
+      };
+
+
+function testApp(url) {
+  var timeout, t = 1000, hasApp = true;
+  alert('999');
+  setTimeout(function () {
+    if (hasApp) {
+      alert('安装了app');
+    } else {
+      alert('未安装app');
+    }
+    document.body.removeChild(ifr);
+  }, 2000)
+
+  var t1 = Date.now();
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute('src', url);
+  ifr.setAttribute('style', 'display:none');
+  document.body.appendChild(ifr);
+  timeout = setTimeout(function () {
+     var t2 = Date.now();
+     if (!t1 || t2 - t1 < t + 100) {
+       hasApp = false;
+     }
+  }, t);
+}
+
+function test()　{
+    var Sys = {};
+    var ua = navigator.userAgent.toLowerCase();
+    var s;
+
+    (s = ua.match(/firefox\/([\d.]+)/)) ? Sys.firefox = s[1] :
+    (s = ua.match(/chrome\/([\d.]+)/)) ? Sys.chrome = s[1] :
+    (s = ua.match(/opera.([\d.]+)/)) ? Sys.opera = s[1] :
+    (s = ua.match(/version\/([\d.]+).*safari/)) ? Sys.safari = s[1] : 0;
+
+    if (Sys.firefox) {
+        alert('Firefox: ' + Sys.firefox);
+    }else if(Sys.chrome) {
+        alert('Chrome: ' + Sys.chrome);
+    }else if(Sys.opera) {
+        alert('Opera: ' + Sys.opera);
+    }else if(Sys.safari) {
+        alert('Safari: ' + Sys.safari);
+    }else{
+        alert(ua); //其他种类型的浏览器，就可以根据输出的ua里的信息用正则匹配来判断
+    }
+}
+
+</script>
+    <script>
+        new Mlink({
+        mlink: "AaVD",
+        button: document.querySelector('a#openAppBtn'),
+        autoLaunchApp : false,
+        autoRedirectToDownloadUrl: true,
+        downloadWhenUniversalLinkFailed: false,
+        inapp : false,
+        params: {}
+        });
+    </script>
+
+
+</head>
+<body>
+HTML 内容显示 <br/>
+<a href="http://www.baidu.com">我是百度</a><br><br>
+<input type="button" onclick="android()" value="我----2----是h5点我启动其他app"></input><br><br>
+<a href="javascript:testApp('httpqiu://sj.com/david?name=qiuweizhong&age=24')">打电话</a><br><br>
+<input type="button" onclick="test()" value="浏览器类型"></input><br><br>
+<a id="btnOpenApp" href="javascript:void(0);">打开App</a>
+</body>
+</html>

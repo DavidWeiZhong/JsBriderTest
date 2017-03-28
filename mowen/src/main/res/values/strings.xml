@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MagicWindowSDKExample</string>
+     <string name="ok">确定</string>
+
+
+    <string name="home_title">首页</string>
+    <string name="splash_title">引导页</string>
+    <string name="category">分类</string>
+    <string name="detail">详情</string>
+
+    <string name="home_top_1">生活</string>
+    <string name="home_top_2">电影</string>
+    <string name="home_top_3">充值</string>
+    <string name="home_top_4">酒店</string>
+    <string name="home_top_5">调研</string>
+
+
+    <string name="custom_style_title">获取标题后会替换此内容</string>
+    <string name="custom_style_description">获取活动内容后会替换此内容</string>
+
+
+    <string name="dialog_page">进入此页面，如果dialog内定义的魔窗位开启，则会首先弹出dialog</string>
+
+    <string name="share_by_click">点击直接分享</string>
+
+    <string name="custom_event_page">下面几个按钮分别模拟，进入购买页面，点击购买，以及购买成功。</string>
+
+    <string name="come_in_buy_page">进入购买页面</string>
+    <string name="click_to_buy">点击购买</string>
+    <string name="buy_done">购买完成</string>
+
+
+
+</resources>

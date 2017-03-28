@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>游戏联运平台</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- link -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/shouye-px.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexGrid.css" />
+    <!-- link_end -->
+
+    <!-- script 引包 -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript">
+    /* JS动态媒体查询设置根字号 */
+    ;(function(n) {
+        var e = n.document , t = e.documentElement , 
+            i = 750 , d = i / 50 , 
+            o = "orientationchange" in n ? "orientationchange" : "resize", 
+            a = function() {
+            var n = t.clientWidth || 320; n > 750 && (n = 750),
+            t.style.fontSize = n / d + "px"
+        };
+        e.addEventListener && (n.addEventListener(o, a, !1),
+        e.addEventListener("DOMContentLoaded", a, !1))
+    })(window);
+
+    </script>
+</head>
+<body>
+<div id="app">
+
+<header class="header wrap clearfix">
+    <h1>
+        <a href="#">
+        沃畅玩
+        </a>      
+    </h1>
+
+    <input type="search" name="search" id="search" placeholder="天下"/>   
+    
+     <a href="#" class="personal-btn"></a>
+    <a href="#" class="download-btn"><div class="red-point"></div></a>
+   
+</header>
+
+<!-- 头部nav开始 -->
+<nav class="body-nav row">
+    <a class="col col-3" href="index.html">精品</a>
+    <a class="col col-3" href="shouye-ti.html">专题</a>
+    <a class="col col-3" href="shouye-fl.html">分类</a>
+    <a class="col col-3" href="shouye-px.html">排行</a>
+    <div class="body-nav-udline"></div>
+</nav>
+
+<!-- 排行nav -->
+<nav class="shouye-px-hd-nav">
+   <ul class="row">
+        <li class="on col col-33"><a href="#">下载榜</a></li>
+        <li class="col col-33"><a  href="#">新游榜</a></li>
+        <li class="col col-33"><a  href="#">飙升榜</a></li>
+   </ul>
+</nav>
+<!-- 排行body -->
+<section class="shouye-px-body">
+    <div class="px-bd-fl1 row">
+        <div class="col col-33 num2">
+            <a class="px-bd-fl1-img" href="#">
+                <img v-bind:src=game1.img alt="" />
+            </a>
+        <div class="px-bd-fl1-bd">
+            <span>2</span>
+                <b>{{game1.title}}</b>
+                <i>{{game1.daxiao}}</i>
+                <a href="#">免流量下载</a>
+        </div>
+
+        </div>
+
+        <div class="col col-33 num1">
+             <a class="px-bd-fl1-img" href="#">
+                <img v-bind:src=game2.img alt="" />
+            </a>
+        <div class="px-bd-fl1-bd">
+            <span>1</span>
+                <b>{{game2.title}}</b>
+                <i>{{game1.daxiao}}</i>
+                <a href="#">免流量下载</a>
+        </div>
+
+        </div>
+
+        <div class="col col-33 num3">
+             <a class="px-bd-fl1-img" href="#">
+                <img v-bind:src=game3.img alt="" />
+            </a>
+        <div class="px-bd-fl1-bd">
+            <span>3</span>
+                <b>{{game3.title}}</b>
+                <i>{{game1.daxiao}}</i>
+                <a href="#">免流量下载</a>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="px-bd-fl2">
+        <ul>
+
+            <li class="clearfix">
+                <div class="px-index">4</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game4.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game3.title}}</h5>
+                        <div>
+                            <span>{{game1.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+       
+            <li class="clearfix">
+                <div class="px-index">5</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game5.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game5.title}}</h5>
+                        <div>
+                            <span>{{game2.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game2.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+       
+            <li class="clearfix">
+                <div class="px-index">6</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game6.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game6.title}}</h5>
+                        <div>
+                            <span>{{game2.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+       
+            <li class="clearfix">
+                <div class="px-index">7</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game1.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game1.title}}</h5>
+                        <div>
+                            <span>{{game1.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+                   
+            <li class="clearfix">
+                <div class="px-index">8</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game3.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game3.title}}</h5>
+                        <div>
+                            <span>{{game1.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+       
+            <li class="clearfix">
+                <div class="px-index">9</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game5.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game5.title}}</h5>
+                        <div>
+                            <span>{{game1.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+       
+            <li class="clearfix">
+                <div class="px-index">10</div>
+                
+                <div class="bd-fl2-right">
+                    <a href="#" class="bd-fl2-right-pic">
+                        <img v-bind:src=game3.img alt="" />
+                    </a>
+                    
+                    <div class="bd-fl2-right-ct2">
+                        <h5>{{game3.title}}</h5>
+                        <div>
+                            <span>{{game1.leibie}}</span>
+                            <ul><li></li><li></li></ul>
+                        </div>
+                            
+                        <b>{{game1.person}}万人安装</b>
+                    </div>
+                    
+                     <a class="bd-fl2-right-dl-btn" href="#">免流量下载</a>
+
+                </div>
+                            
+                <div class="underline"></div>
+            </li>
+
+
+        </ul>
+    </div>
+
+</section>
+
+
+
+
+<div class="chenggao"></div>
+
+<!-- 底部nav -->
+<nav class="bm-nav wrap">
+    <div class="nav-sele-container">
+        <a href="#" class="nav-current">首页</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">会员</a>
+    </div>
+    <div class="nav-sele-container">
+        <a href="#">我的</a>
+    </div>
+
+</nav>
+
+
+
+</div>
+<script type="text/javascript" src="js/vue.js"></script>
+
+<script type="text/javascript" src="js/index-jp.js"></script>
+
+<script type="text/javascript" src="js/shouye-px.js"></script>
+</body>
+</html>

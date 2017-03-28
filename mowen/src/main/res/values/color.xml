@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#58a525</color>
+    <color name="gray">#808080</color>
+    <color name="gray_1">#F2F2F2</color>
+    <color name="light_white">#fff</color>
+    <color name="red">#E84B35</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FFBA00</color>
+    <color name="bg_white">#E4E4E4</color>
+    <color name="black">#000000</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="notice_bg">#95236D</color>
+    <color name="bg_color">#f6f6f6</color>
+    <color name="translucent">#88252525</color>
+    <color name="translucent_white">#88FFFFFF</color>
+    <color name="bg_gray">#E4E4E4</color>
+    <color name="bottom_bar">#FFF7F7F7</color>
+    <color name="text_gray_light">#ff868686</color>
+    <color name="text_yellow">#ffFE9209</color>
+    <color name="bottom_bar_text_normal">#A4A4A4</color>
+    <color name="bottom_bar_text_select">@color/black</color>
+    <color name="home_list_text">#FFEAEAEA</color>
+    <color name="detail_button">#E15111</color>
+</resources>

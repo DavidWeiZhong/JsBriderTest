@@ -1,0 +1,238 @@
+﻿<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>
+        Tamic
+    </title>
+</head>
+
+<body>
+<p>
+    <xmp id="show">
+    </xmp>
+</p>
+<p>
+    <xmp id="init">
+    </xmp>
+</p>
+<p>
+    <input type="text" id="text1" value=""/>
+</p>
+
+<p>
+    <input type="text" id="text2" value=""/>
+</p>
+
+<p>
+    <input type="button" id="enter1" value="登录（响应Native方法）" onclick="login();"
+    />
+</p>
+
+<p>
+    <input type="button" id="enter" value="发消息给Native" onclick="testClick();"
+    />
+</p>
+
+
+<p>
+    <input type="button" id="enter2" value="显示源代码" onclick="testDiv();"/>
+</p>
+
+
+<p>
+    <input type="button" id="CallNative" value="调用native" onclick="onUrl();"/>
+</p>
+
+<p>
+    <input type="file" id="open" value="打开文件" onclick="onOpen();"/>
+</p>
+
+<p>
+    <input type="button" id="call" value="打电话" onclick="call();"/>
+</p>
+
+<p>
+    <input type="button" id="saveCookie" value="保存cookie" onclick="setCookie();"/>
+</p>
+
+<p>
+    <input type="button" id="getCookie" value="获得cookie" onclick="getCookie('')">
+</p>
+
+<p>
+    <input type="button" id="checkCookie" value="检查cookie" onclick="checkCookie()">
+</p>
+
+<p>
+    <input type="button" id="goto" value="跳转" onclick="goto()">
+</p>
+
+
+</body>
+
+<script>
+
+        //一来先判断有没有cookie
+        function goto() {
+            // 以下方式直接跳转
+            window.location.href='error.html';
+        }
+        //获得cookie
+        function getCookie(c_name){
+            alert('2222weikong')
+            if (document.cookie.length>0){
+             alert('buweikong')
+                c_start=document.cookie.indexOf(c_name + "=")
+                if (c_start!=-1) {
+                    c_start=c_start + c_name.length+1
+                    c_end=document.cookie.indexOf(";",c_start)
+                    if (c_end==-1) c_end=document.cookie.length
+                       return unescape(document.cookie.substring(c_start,c_end))
+                }
+            }
+            return ""
+        }
+
+        function setCookie(c_name,value,expiredays){
+            var exdate=new Date()
+            exdate.setDate(exdate.getDate()+expiredays)
+            document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+        }
+
+        function checkCookie(){
+            username=getCookie('username')
+            if (username!=null && username!=""){
+                alert('Welcome again '+username+'!')
+            }else {
+                username=prompt('Please enter your name:',"")
+                if (username!=null && username!=""){
+                    setCookie('username',username,365)
+                }
+             }
+        }
+
+        function bridgeLog(logContent) {
+            document.getElementById("show").innerHTML = logContent;
+        }
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+       // 第一连接时初始化bridage,
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+                console.log('JS got a message', message);
+                var data = {
+                    'Javascript resquest': 'Hello java! 我是 js!'
+                };
+                alert(message);
+                console.log('JS responding with', data);
+                responseCallback(data);
+            });
+
+            // 注册一个"callNative"函数,
+            bridge.registerHandler("callNative", function(data, responseCallback) {
+                document.getElementById("show").innerHTML = ("data from Java: = " + data);
+                var responseData = "hello java !  我要你的地址!";
+
+                alert('JS say:'+  responseData);
+
+                // response层
+                responseCallback(responseData);
+            });
+        })
+        function onUrl() {
+          　
+            var data = "我要你一个url";
+            //call native method
+            window.WebViewJavascriptBridge.callHandler(
+                'callJs'
+                , {'param': data }
+                , function(responseData) {
+
+                 alert('Js 收到你的地址:'+ responseData);
+
+                }
+            );
+        }
+
+          function onOpen() {
+          　
+            var data = "我要你打开相册";
+            //call native method
+            window.WebViewJavascriptBridge.callHandler(
+                'open'
+                , {'param': data }
+                , function(responseData) {
+
+                 alert('Js 收到你的:'+ responseData);
+                 document.getElementById("open").innerHTML = "send get responseData from java, data = " + responseData;
+                }
+            );
+        }
+        function testDiv() {
+            document.getElementById("show").innerHTML = document.getElementsByTagName("html")[0].innerHTML;
+        }
+        function testClick() {
+            var str1 = document.getElementById("text1").value;
+            var str2 = document.getElementById("text2").value;
+            //发送消息给java本地代码
+            var data = {id: 1, content: "这是一个图片 <img src=\"a.png\"/> test\r\nhahaha"};
+            window.WebViewJavascriptBridge.send(
+                data
+                , function(responseData) {
+                    document.getElementById("show").innerHTML = "repsonseData from java, data = " + responseData
+                }
+            );
+        }
+        function login() {
+            var str1 = document.getElementById("text1").value;
+            var str2 = document.getElementById("text2").value;
+            var data = "name=" + str1 + ",pass=" + str2;
+            //call native method
+            window.WebViewJavascriptBridge.callHandler(
+                'login'
+                , {'param': data }
+                , function(responseData) {
+                    document.getElementById("show").innerHTML = "send get responseData from java, data = " + responseData
+                }
+            );
+        }
+
+        function call() {
+             window.WebViewJavascriptBridge.callHandler(
+                'call'
+                ,123456789
+                , function(responseData) {
+                    document.getElementById("show").innerHTML = "send get responseData from java, data = " + responseData
+                }
+            );
+        }
+        bridge.init(function(message, responseCallback) {
+        console.log('JS got a message', message);
+        var data = {
+            'Javascript Responds': 'Wee!'
+        };
+        console.log('JS responding with', data);
+        responseCallback(data);
+    });
+
+
+
+
+</script>
+
+</html>

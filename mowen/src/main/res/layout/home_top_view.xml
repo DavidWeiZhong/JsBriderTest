@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_m_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical" >
+    <!--<FrameLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="visible" >-->
+
+        <!--<com.viewpagerindicator.AutoScrollViewPager-->
+            <!--android:id="@+id/pager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="140dip" />-->
+
+        <!--<com.viewpagerindicator.CirclePageIndicator-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|center"-->
+            <!--android:layout_marginBottom="5.0dip"-->
+            <!--android:padding="2dip" />-->
+    <!--</FrameLayout>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.magicwindow.deeplink.view.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"/>
+    </FrameLayout>
+
+
+</LinearLayout>
