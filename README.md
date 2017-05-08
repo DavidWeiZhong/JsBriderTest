@@ -1,11 +1,11 @@
 # JsBriderTest
 js与webview的交互
 
-#cookie_app_web
+# cookie_app_web
 通过本地native设置网页cookie，和在本地获得网页的cookie
 
 
-#2各种设置
+# 2各种设置
 
 /设置是否支持缩放
 webSettings.setSupportZoom(true);
@@ -28,7 +28,7 @@ webSettings.setLoadWithOverviewMode(true);
 //        mWebView.loadUrl("file:///android_asset/demo.html");//需要在assets目录中新建一个demo.html
 
 
-#android 与web方法之间的调用
+# android 与web方法之间的调用
 首先webSettings.setJavaScriptEnabled(true);
 
 1， 无参数调用 JS的方法
@@ -84,7 +84,7 @@ findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
     }
     
     
-    #setWebViewClient()方法，辅助WebView处理各种通知、请求事件：
+    # setWebViewClient()方法，辅助WebView处理各种通知、请求事件：
     
     webView.setWebViewClient(new WebViewClient(){
     @Override
@@ -115,7 +115,7 @@ findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
 );
  
  
- #setWebChromeClient()方法，辅助WebView处理Javascript的对话框，网站图标，网站title，加载进度等：
+ # setWebChromeClient()方法，辅助WebView处理Javascript的对话框，网站图标，网站title，加载进度等：
  
  webView.setWebChromeClient(new WebChromeClient(){
  
